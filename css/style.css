@@ -1,0 +1,497 @@
+:root{
+
+--red-orange:#ef4f4f;
+--green:#74c7b8;
+--primary:#ddd;
+--dark: #333;
+--light:#fff;
+--semi-dark:#424040;
+--lightdark:#d3cfcf;
+--blue:#0A66C2;
+--gray:#2A2A2C;
+
+--shadow: 0 1px 5px rgba(104,104,104,0.8);
+
+--primary-font: 'Poppins', sans-serif;
+
+}
+
+/*#######################################################################################################G L O B A L C L A S S E S*/
+*{
+	padding:0;
+	margin:0;
+	font-family: var(--primary-font);
+	box-sizing: border-box;
+	color:var(--blue-text);
+}
+.navbar,.landing-page{  /*This is for the margin of every section and contents*/
+	margin-left:14%;
+	margin-right:14%;
+	margin-top: 1.8rem;
+}
+.blue-text{color:var(--blue);}.white-text{color:white;} /*This code is to apply css color globally on the selected text classes*/
+.page-title-attributes{font-size:1.3rem;letter-spacing: 10px; font-weight: 400;opacity: 0.8;padding-top:2rem; text-align:center;}
+
+.section-headers{
+	font-size: 1.4rem;
+	font-weight:700;
+	text-align: center;
+}
+.section-subheaders{
+    font-size: 1.2rem;
+	font-weight: 400;
+	opacity: .9;
+	letter-spacing: 2px;
+	text-align: center;
+
+}
+@media(max-width: 700px){
+	.section-headers{
+	font-size: 1.3rem;
+	font-weight:700;
+}
+	.section-subheaders{
+    font-size: 1rem;
+    margin: 0 14% 1rem 14%;
+
+}
+}
+@media (max-width: 500px)
+{
+	.page-title-attributes{
+		font-size: 1rem;
+	}
+}
+/*################################################################################################################L A N D I N G P A G E*/
+.brand-title{
+	color: var(--blue);
+	font-weight: bold;
+	font-size: 1.7rem;
+	margin: 0 auto;
+	margin-left:-0.8rem;
+}
+.nav-link{
+	color:var(--blue)!important;
+	font-size: 1.1rem;
+	letter-spacing: 2px;
+}
+.nav-link-contact{
+	color:white!important;
+	background-color: var(--blue);
+	padding-left:1.2rem!important;
+	padding-right:1.2rem!important;
+	border-radius: 5rem;
+	font-weight: 600;
+}
+.flex-page{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top:3rem;
+	line-height: 2rem;
+}
+.developers-pic img{
+	width: 25rem;
+}
+.web-designer{
+	font-weight: 600;
+	font-size: 1.1rem;
+	letter-spacing: 5px;
+	opacity: 0.7;
+}
+.mark-daniel{
+	font-weight: 700;
+	font-size: 3.9rem;
+	letter-spacing: 3px;
+	margin-bottom: 2rem;
+}
+.about-me-btn{
+
+	font-size: 1.2rem;
+	text-decoration: none;
+	padding: .8rem 2.1rem .8rem 2.1rem;
+	border: 4px solid var(--blue);
+	border-radius: 5rem;
+	letter-spacing: 4px;
+	font-weight: 700;
+	
+
+}
+.about-me-btn:hover{
+	background-color: var(--blue);
+	color: white;
+	transition: 0.5s ease-in-out;
+}
+.social-links{
+	text-align: center;
+	letter-spacing: 5px;
+	padding:1.8rem 1rem 0 1rem;
+	margin-bottom: 2rem;
+
+}
+.social-links i{
+	color:var(--blue);
+}
+
+
+
+/*#################################################################################################################### A B O U T M E*/
+.aboutme-page{
+background-color: var(--blue);
+
+
+	text-align: center;
+	padding-left:14%;
+	padding-right:14%;
+}
+.aboutme-page img{
+	width:8rem;
+	border-radius: 5rem;
+	margin:1rem 0 1.8rem 0;
+}
+.aboutme-page h3{
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+.introduction{
+	letter-spacing: 3px;
+	font-size: 1.1rem;
+	color:var(--primary);
+	margin-bottom: 1.8rem;
+}
+.description{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.description div{
+	letter-spacing: 2px;
+	line-height: 1.6rem;
+}
+.description div p{
+	color:var(--primary);
+	font-weight: 300;
+	margin: 2rem 0 2rem 0;
+	padding:0 0.5rem 0 0.5rem;
+}
+
+.fa-user-graduate,.fa-laptop-code,.fa-fill-drip{
+padding:2rem;
+}
+
+/*################################################################################################################### P O R T F O L I O*/
+
+.portfolio-page{
+	background-color: var(--light);
+	color:white;
+}
+.portfolio-cards{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2.2rem;
+}
+.visit-btn{
+	background-color: var(--blue);
+	padding: 1rem 1.5rem 1rem 1.5rem;
+	text-decoration: none;
+	border-radius: 2px;
+	display: block;
+	text-align: center;
+	box-shadow: var(--shadow);
+	color:white;
+}
+.visit-btn:hover{
+	color:white;
+}
+
+/*######################################################################################################## C R E D E N T I A L S*/
+.credentials-page{
+	background-color: #C2D3E5;
+	padding: 0 14% 4rem 14%;
+	color: var(--blue);
+}
+.credentials{
+	margin-bottom: 2rem;
+}
+.content{
+	/*background-color: var(--primary);*/
+
+}
+.credentials-divider{
+	margin-top: 3rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.logo-divide p{
+	text-align: center;
+	margin-right: -15rem;
+	/*background-color: pink;*/
+}
+.fa-briefcase, .fa-graduation-cap{
+	font-size: 5rem;
+}
+.resume-dl-btn{	
+	background-color: var(--blue);
+	text-decoration: none;
+	color: white;
+	font-size: 1rem;
+	font-weight: 600;
+	padding: 1rem 2rem;
+	border-radius: 4px;
+}
+.resume-dl-btn:hover{
+	color: white;
+}
+/*################################################################################################################### C O N T A C T */
+
+.contact-page{
+	background-color:#2A2A2C;
+	color: white;
+	padding:0 14% 1rem 14%;
+}
+.contact-page h2, .contact-page h4{
+	text-align: center;
+}
+.contact-holder{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.contact-holder div{
+	text-align: center;
+	margin: 3rem 0 3rem 0;
+}
+.fa-map-marked-alt, .fa-envelope, .fa-phone-square-alt{
+	margin-bottom: .8rem;
+	color:var(--primary);
+	font-size: 2.5rem;
+
+}
+
+.contact-title{
+	font-size: 1.2rem;
+	font-weight: 600;
+	color:var(--primary);
+}
+.contact-description{
+	font-weight: 400;
+	opacity: .8;
+	font-size: 1rem;
+
+}
+
+
+/*#################################################################################################################### F O O T E R #*/
+.social-links-footer{
+	text-align: center;
+}
+.social-links-footer i{
+	letter-spacing: 20px;
+color: var(--primary);
+font-size: 1.9rem;
+margin: 0 auto;
+opacity: .5;
+padding-top:1rem;
+
+}
+
+.copyright-bar{
+	background-color: black;
+	padding-bottom: .2rem;
+}
+.copyright{
+	text-align: center;
+	opacity: .4;
+	font-weight: 300;
+	letter-spacing: 2px;
+	color: var(--primary);
+}
+
+
+
+.website{
+	border: 1px solid rgba(10, 102, 194, 0.7);
+	background-color: var(--light);
+	margin: 10px;
+	border-radius: 5px;
+	padding: 5px;
+	width:20rem;
+	height: 20rem;
+box-shadow: rgba(10, 102, 194, 0.35) 0px 5px 15px;
+transition: 1.2s ease;
+}
+.website:hover{
+	transform: scale(1.1);
+	
+}
+.website-child{
+	max-width: 100%;
+	max-height: 100%;
+}
+.website-child p{
+	color: var(--blue);
+	text-align: center;
+	font-weight: 1vw;
+	font-weight: 700;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+.atarashi-bg{
+	max-width: 100%;
+}
+
+
+
+/*******************************************************MEDIA QUERIES SECTION******************************************************/
+
+
+
+
+
+
+
+/*#######LANDING PAGE MEDIA QUERIES#####*/
+@media (max-width:1300px){
+
+			.developers-pic img{
+				width: 22rem;
+				margin-top: 4rem;
+			}.web-designer{
+				font-size: 0.9rem;
+			 }.mark-daniel{
+			 	font-size: 3.6rem;
+			  }.about-me-btn{
+			  	font-size: 0.9rem;
+			  }
+}
+
+@media (max-width: 1200px){
+	.flex-page{
+		display: flex;
+		flex-direction: column-reverse;
+		text-align: center;
+		margin-top: 1.5rem;
+	}
+	.developers-pic img{
+		width: 14rem;
+		}
+		.mark-daniel{
+			font-size: 3rem;
+			margin-top: -1rem;
+			}
+			.about-me-btn{
+			  	font-size: 0.9rem;
+			  }
+			  .navbar{
+			  	background-color: var(--blue);
+			  	position: absolute;
+			  	width: 100%;
+			  	margin: 0 auto;
+			  	margin-top:-1.8rem;
+			  	position: fixed;
+			  	z-index: 99;
+			  }
+			  .nav-link{
+			  	color: var(--primary)!important;
+			  	font-size:1rem ;
+			  	text-align: center;
+			  	letter-spacing: 5px;
+			  }
+			  .brand-title{
+			  	color: white;
+			  	margin-left: 0.2rem;
+			  }.nav-link-contact{
+				color:var(--blue)!important;
+				background-color: var(--light);
+				padding-left:1rem!important;
+				padding-right:1rem!important;
+				border-radius: 5rem;
+				font-weight: 500;
+			}
+
+
+}
+/*#######ABOUT ME MEDIA QUERIES#####*/
+@media (max-width:1000px ){
+
+		.aboutme-page h3{
+		font-weight: 500;
+		}
+		.introduction{
+		font-size: 1rem;
+		}
+		.description{
+			display: flex;
+			flex-direction: column;
+		}
+		.description div p{
+			color:var(--primary);
+			font-weight: 300;
+			font-size: 0.8;
+		}
+
+}
+
+
+
+/*#######CREDENTIALS MEDIA QUERIES#####*/
+@media (max-width: 500px){
+	.credentials-divider{
+		display: flex;
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+	.logo-divide p{
+		text-align: center;
+	}
+}
+@media (max-width: 1000px){
+	.logo-divide p{
+		margin-right: 0;
+	}
+	.resume-dl-btn{
+		display: block;
+		text-align: center;
+	}
+}
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES FOR PORTFOLIO CARDS*/
+@media (max-width: 1390px){
+	.portfolio-cards{
+		padding: 0 14% 0 14%;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+@media(max-width: 1025px){
+	.portfolio-cards{
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media(max-width: 700px){
+	.portfolio-cards{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+
+
+
+/*MEDIA QUERIES FOR CONTACT*/
+@media(max-width: 1020px){
+	.contact-holder{
+		display: flex!important;
+		flex-direction: column!important;
+	}
+	.contact-page h4{
+		margin-bottom: 2rem;
+	}
+}
